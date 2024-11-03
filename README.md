@@ -1,25 +1,40 @@
 # mtm6302-capstone-harr0764
-Ruby Harris
-041113742
-Pokedex
 
+# Capstone Project - Part 3 Report
 
-Design Decisions:
+Steps Taken
 
-Color Palette: I chose a red, white, and blue theme to capture the essence of a Pokeball. It adds a vibrant touch that aligns well with the Pokémon theme.
+*Project Structure:*
+- Set up an organized file structure with three core HTML files: gallery.html (formerly index.html), caught.html, and details.html.
+- Designed a consistent header banner and navigation bar across pages for a unified look and easy navigation.
+- Integrated a font style and color scheme to match the theme, with layout adjustments made through media queries.
 
-Typography: For the app name, I selected Press Start 2P for a playful, retro feel. Bungee is used for the navigation links, as it's easier to read, while Roboto ensures clarity for the body text. When clicking on a nav link, it turns blue to indicate the active page. I also opted for a Pokedex symbol for the gallery, which felt fitting.
+*Gallery Page (index.html):*
 
-Layout: The grid layout is user-friendly, adapting smoothly to various screen sizes and allowing for easy scrolling.
+- Each Pokémon is displayed as a card with an number, image and name. Clicking on any card directs the user to the details.html page, where additional information is shown.
+- Designed a responsive grid layout for displaying Pokémon cards, which adjusts to screen size for optimal viewing on desktops, tablets, and mobile devices.
+- A "Load More" button is planned for future implementation using JavaScript to dynamically load more Pokémon when needed.
 
-User Actions: Users can click on Pokémon cards for more details, mark them as caught using the Pokeball icon, return to the previous page, and use a "More" button to discover additional Pokémon.
-Responsive Design: I made sure the design looks good on all devices. Whether on a phone, tablet, or desktop, the layout adjusts to maintain a clean and functional appearance.
+*Caught Page (caught.html):*
 
+- Includes a “View Details” link for each Pokémon, styled consistently with the rest of the page, allowing users to view more information on the details.html page.
+- Designed with a different layout from the gallery.html page for a varied yet cohesive user experience.
 
-All of the assets I used in my mockup were sourced from these links:
+*Details Page (details.html):*
 
-Icons for navigation and the "caught" icon, as well as the "More" button on tablet: [Icons8](https://icons8.com/)
+- Created a Bulbasaur-focused evolution section featuring Bulbasaur, Ivysaur, and Venusaur sprites. This section includes placeholder images, and each sprite is intended for future interaction using JavaScript.
+- Set up a split layout with Bulbasaur’s image and title on the left, and info boxes on the right for Bulbasaur’s characteristics: Description, Type, Abilities, Gender Ratio, and Catch Rate.
+- Used media queries for responsive design, rearranging the layout so info boxes move below the image on smaller screens for better readability.
+- Added a return button in the top-left corner for quick navigation back to the previous page.
 
-Pokémon info, images and sprites: [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page)
+Resources
 
-The Pokeball in the main title of the desktop version: [Pokémon Fandom](https://pokemon-fano.fandom.com/wiki/Poke_Ball)
+- PokéAPI: PokéAPI was used as the main data source for all Pokémon-related information.
+- Icons8: Icons8 provided high-quality icons used in the navigation and details page sections.
+- Google Fonts: Fonts such as Bungee, Press Start 2P, and Roboto were sourced from Google Fonts for consistency in text styling across the project.
+
+Challenges Faced
+
+- Understanding how to create a responsive design was challenging. I had to experiment with media queries to make sure the layout worked on different screen sizes.
+- Figuring out how to style the Pokémon cards and layout to make them visually appealing took some trial and error.
+- Planning for the "Load More" button and interactive elements on the details page without using JavaScript yet was a bit tricky. I had to think ahead about how to set things up for later.

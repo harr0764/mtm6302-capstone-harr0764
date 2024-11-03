@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Gallery</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <a href="index.html" class="return-button">Return</a>
+    <header class="banner">Pokédex</header>
+    <div class="evolution-banner">
+        <div class="evolution">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
+            <div class="evolution-info">
+                <span>#001: Bulbasaur</span>
+            </div>
+        </div>
+        <div class="evolution">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur">
+            <div class="evolution-info">
+                <span>#002: Ivysaur</span>
+            </div>
+        </div>
+        <div class="evolution">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur">
+            <div class="evolution-info">
+                <span>#003: Venusaur</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="pokemon-info">
+        <div class="left-side">
+            <div class="bulbasaur-image">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur" class="bulbasaur-large">
+            </div>
+            <div class="pokemon-title">
+                <h2>Bulbasaur</h2>
+                <span class="pokemon-classification">Seed Pokémon</span>
+                <div class="toggle-button">
+                    <input type="checkbox" id="caught-toggle" class="toggle-input">
+                    <label for="caught-toggle" class="slider">
+                        <img src="https://img.icons8.com/?size=100&id=63311&format=png&color=000000" alt="Pokéball" class="pokeball-icon">
+                    </label>
+                </div>
+            </div>
+            <p class="pokemon-description">Bulbasaur is a dual-type Grass/Poison Pokémon introduced in Generation I.
+                It evolves into Ivysaur starting at level 16, which evolves into Venusaur starting at level 32.
+                Along with Charmander and Squirtle, Bulbasaur is one of the three first partner Pokémon of Kanto available at the beginning of Pokémon Red, Green, Blue, FireRed, and LeafGreen.</p>
+        </div>
+        
+        <div class="right-side">
+            <div class="info-box">
+                <h3>Description</h3>
+                <p>Bulbasaur is a dual-type Grass/Poison Pokémon. It has the ability to absorb sunlight and use it to grow and thrive.</p>
+            </div>
+            <div class="info-box">
+                <h3>Type</h3>
+                <div class="type-options">
+                    <span class="type grass">Grass</span>
+                    <span class="type poison">Poison</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <h3>Abilities</h3>
+                <div class="type-options">
+                    <span class="type">Overgrow</span>
+                    <span class="type">Chlorophyll</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <h3>Gender Ratio</h3>
+                <div class="type-options">
+                    <span class="type">87.5% Male</span>
+                    <span class="type">12.5% Female</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <h3>Catch Rate</h3>
+                <div class="type-options">
+                    <span class="type">45 (11.9%)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pokédex. All rights reserved.</p>
+    </footer>
+</body>
+</html>
