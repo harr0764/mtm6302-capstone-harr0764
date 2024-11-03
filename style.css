@@ -1,0 +1,349 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+
+/* General body and banner styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #FF0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    font-family: 'Bungee', cursive;
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    color: #1E90FF;
+}
+
+.navbar a img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+/* General grid layout for Pokemon containers */
+.pokemon-container, .pokemon-list {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .pokemon-container, .pokemon-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pokemon-container, .pokemon-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Pokemon card styling */
+.pokemon-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Styling for pokemon name banner in Gallery page */
+.pokemon-name {
+    background-color: #FF7A7A;
+    padding: 5px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for Pokémon name in Caught page */
+.pokemon-caught-name h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Load More Button Styles */
+.load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #f00; 
+    border: 2px solid #f00; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; 
+}
+
+.load-more:hover {
+    background-color: #f00; 
+    color: #fff;
+}
+
+/* Caught Pokémon Icon */
+.Pokecaught {
+    max-width: 15px;
+    max-height: 15px;
+}
+
+/* Details Link Styles */
+.details-link {
+    color: #1E90FF;
+    text-decoration: none;
+    font-size: 1em; 
+}
+
+.details-link:hover {
+    text-decoration: underline; 
+}
+
+/* Hide details link on smaller screens */
+@media (max-width: 768px) {
+    .details-link {
+        display: none; 
+    }
+}
+
+/* Pokemon Link Styles */
+.pokemon-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Pokemon Link Hover Effects */
+.pokemon-link:hover {
+    opacity: 0.7; 
+}
+
+/* Evolution Banner Styles */
+.evolution-banner {
+    background-color: #96CBB2; 
+    display: flex;
+    justify-content: space-around; 
+    padding: 5px;
+}
+
+.evolution {
+    display: flex; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.evolution img {
+    width: 60px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.evolution-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Details Container Styles */
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Right Side Styles */
+.right-side {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Big Image Styles */
+.big-image {
+    max-width: 100%;
+    height: auto; 
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+    position: relative;
+    display: inline-block;
+    width: 60px; 
+    height: 34px; 
+}
+
+.toggle-input {
+    opacity: 0; 
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; 
+    transition: background-color 0.4s; 
+    border-radius: 34px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    padding: 0 4px; 
+}
+
+.pokeball-icon {
+    width: 26px;
+    height: auto;
+    transition: transform 0.4s; 
+}
+
+/* When the toggle is checked */
+.toggle-input:checked + .slider {
+    background-color: #5B8361; 
+    justify-content: flex-end; 
+}
+
+.toggle-input:checked + .slider .pokeball-icon {
+    transform: translateX(-4px); 
+}
+
+
+/* Pokemon Info Container Styles */
+.pokemon-info {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+/* Left Side Styles */
+.left-side {
+    flex: 1; 
+    padding-right: 20px; 
+    text-align: center;
+    margin-left: 50px;
+}
+
+/* Right Side Styles */
+.right-side {
+    background-color: #99C29C; 
+    padding: 20px; 
+    display: flex; 
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Info Box Styles */
+.info-box {
+    background-color: #5B8361; 
+    color: white; 
+    margin: 5px 0; 
+    padding: 10px; 
+    border-radius: 5px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.type-options {
+    display: flex;  
+    column-gap: 5px;
+}
+
+.type {
+    background-color: white; 
+    color: #333; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+
+/* Styles for smaller screens */
+@media (max-width: 900px) {
+    .pokemon-info {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .right-side {
+        width: 80%; 
+        margin-top: 20px; 
+    }
+}
+
+.return-button {
+    position: absolute; 
+    top: 160px; 
+    left: 20px; 
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #f00; 
+    border: 2px solid #f00; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+.return-button:hover {
+    background-color: #f00; 
+    color: #fff;
+}
+
+@media (max-width: 768px) { 
+    .bulbasaur-large {
+        max-width: 200px; 
+    }
+}
+
+@media (max-width: 480px) { 
+    .bulbasaur-large {
+        max-width: 150px; 
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+}
