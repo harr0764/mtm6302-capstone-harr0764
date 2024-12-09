@@ -347,3 +347,14 @@ footer {
     text-align: center;
     margin: 30px;
 }
+
+/* Initially, the details page should be hidden - but it doesnt work anyways */
+#details-page {
+    display: block;
+  }
+  
+  /* Gallery page is visible by default */
+  #gallery-page {
+    display: block;
+  }
+  

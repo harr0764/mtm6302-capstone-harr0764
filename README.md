@@ -1,40 +1,27 @@
 # mtm6302-capstone-harr0764
 
-# Capstone Project - Part 3 Report
+## Capstone Project - Part 4 Report
 
-Steps Taken
+### Steps Taken
 
 *Project Structure:*
-- Set up an organized file structure with three core HTML files: gallery.html (formerly index.html), caught.html, and details.html.
-- Designed a consistent header banner and navigation bar across pages for a unified look and easy navigation.
-- Integrated a font style and color scheme to match the theme, with layout adjustments made through media queries.
+- Set up an organized file structure with three files: **index.html**, **style.css**, and **script.js**
+- Combined all previous HTML files into the index.html to change it into a SPA.
+- Managed the state of the app through JavaScript by dynamically showing and hiding sections without refreshing the page.
 
-*Gallery Page (index.html):*
+*JavaScript Functionality:*
+- Used JavaScript for loading dynamic content, including the Pokémon's image, classification, abilities, etc., from the **PokéAPI**.
 
-- Each Pokémon is displayed as a card with an number, image and name. Clicking on any card directs the user to the details.html page, where additional information is shown.
-- Designed a responsive grid layout for displaying Pokémon cards, which adjusts to screen size for optimal viewing on desktops, tablets, and mobile devices.
-- A "Load More" button is planned for future implementation using JavaScript to dynamically load more Pokémon when needed.
+### Resources
 
-*Caught Page (caught.html):*
+- **PokeAPI**: The main data source for all Pokémon-related information, including types, abilities, and stats.
+  - URL: [https://pokeapi.co/](https://pokeapi.co/)
+- **Icons8**: Icons used throughout the project, including in the caught section.
+  - URL: [https://icons8.com/](https://icons8.com/)
+- **Google Fonts**: Fonts like **'Press Start 2P'** were used for the Pokédex theme.
+  - URL: [https://fonts.google.com/](https://fonts.google.com/)
 
-- Includes a “View Details” link for each Pokémon, styled consistently with the rest of the page, allowing users to view more information on the details.html page.
-- Designed with a different layout from the gallery.html page for a varied yet cohesive user experience.
+### Challenges Faced
 
-*Details Page (details.html):*
-
-- Created a Bulbasaur-focused evolution section featuring Bulbasaur, Ivysaur, and Venusaur sprites. This section includes placeholder images, and each sprite is intended for future interaction using JavaScript.
-- Set up a split layout with Bulbasaur’s image and title on the left, and info boxes on the right for Bulbasaur’s characteristics: Description, Type, Abilities, Gender Ratio, and Catch Rate.
-- Used media queries for responsive design, rearranging the layout so info boxes move below the image on smaller screens for better readability.
-- Added a return button in the top-left corner for quick navigation back to the previous page.
-
-Resources
-
-- PokéAPI: PokéAPI was used as the main data source for all Pokémon-related information.
-- Icons8: Icons8 provided high-quality icons used in the navigation and details page sections.
-- Google Fonts: Fonts such as Bungee, Press Start 2P, and Roboto were sourced from Google Fonts for consistency in text styling across the project.
-
-Challenges Faced
-
-- Understanding how to create a responsive design was challenging. I had to experiment with media queries to make sure the layout worked on different screen sizes.
-- Figuring out how to style the Pokémon cards and layout to make them visually appealing took some trial and error.
-- Planning for the "Load More" button and interactive elements on the details page without using JavaScript yet was a bit tricky. I had to think ahead about how to set things up for later.
+- **Dynamic Content Loading**: The biggest challenge was ensuring the **details section** displayed correctly when a Pokémon card was clicked. Although the app was designed as a SPA, I struggled with the browser attempting to load a non-existent **details.html** page. This issue stemmed from browser behavior, and despite hours of troubleshooting, I was unable to resolve it.
+- **Active Navigation Link**: Another issue I encountered was dynamically changing the navigation link's color (to blue) to indicate the active page. Despite trying various JavaScript approaches and CSS solutions, I was unable to get the link to turn blue when the page content changed. This was a minor frustration in terms of user experience that I couldn't figure out by the end of the project.
